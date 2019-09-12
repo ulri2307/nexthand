@@ -1,26 +1,25 @@
 let urlParams = new URLSearchParams(window.location.search);
-let navn = urlParams.get("navn");
-let retter;
+let id = urlParams.get("id");
+let varer;
 
 document.addEventListener("DOMContentLoaded", hentJson);
 
 async function hentJson() {
-    const jsonData = await fetch("https://spreadsheets.google.com/feeds/list/17Dd7DvkPaFamNUdUKlrFgnH6POvBJXac7qyiS6zNRw0/od6/public/values?alt=json");
-    retter = await jsonData.json();
-    visRet();
+    const jsonData = await fetch("https://spreadsheets.google.com/feeds/list/1mMZ6UI2-PXD05ApvpFvcxDUxDIGkskqlYwOtrnWw4FU/od6/public/values?alt=json");
+    varer = await jsonData.json();
+    visVare();
     document.querySelector(".luk").addEventListener("click", () => {
         history.back();
     })
 }
 
-function visRet() {
-    retter.feed.entry.forEach((ret) => {
-        if (ret.gsx$navn.$t == navn) {
-            document.querySelector(".billede").src = `imgs/large/${ret.gsx$billede.$t}.jpg`;
-            document.querySelector(".oprindelse").textContent = `Fra vores udvalg af ${ret.gsx$kategori.$t}. Stammer oprindeligt fra ${ret.gsx$oprindelse.$t}.`;
-            document.querySelector(".navn").textContent = ret.gsx$navn.$t;
-            document.querySelector(".lang").textContent = ret.gsx$lang.$t;
-            document.querySelector(".pris").textContent = `Pris: ${ret.gsx$pris.$t}kr.`;
+function visVare() {
+    varer.feed.entry.forEach((vare) => {
+        if (vare.gsx$id.$t == id) {
+            document.querySelector(".billede").src = `nexthand_pics/${vare.gsx$billede.$t}.png`;
+            document.querySelector(".navn").textContent = vare.gsx$navn.$t;
+            document.querySelector(".lang").textContent = vare.gsx$lang.$t;
+            document.querySelector(".pris").textContent = `${vare.gsx$pris.$t}`;
         }
     })
 }
