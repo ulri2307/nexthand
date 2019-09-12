@@ -1,31 +1,31 @@
-let alleRetter = [];
+let alleVarer = [];
 let filter = "alle";
 
 document.addEventListener("DOMContentLoaded", hentJson);
 
 async function hentJson() {
-    const jsonData = await fetch("https://spreadsheets.google.com/feeds/list/17Dd7DvkPaFamNUdUKlrFgnH6POvBJXac7qyiS6zNRw0/od6/public/values?alt=json");
-    alleRetter = await jsonData.json();
-    visRetter();
+    const jsonData = await fetch("https://spreadsheets.google.com/feeds/list/1mMZ6UI2-PXD05ApvpFvcxDUxDIGkskqlYwOtrnWw4FU/od6/public/values?alt=json");
+    alleVarer = await jsonData.json();
+    visVarer();
     addEventListenersToButtons();
 }
 
-function visRetter() {
+function visVarer() {
     const container = document.querySelector(".data");
     const templateContainer = document.querySelector("template");
     container.innerHTML = "";
 
-    alleRetter.feed.entry.forEach((ret) => {
-        if (filter == "alle" || filter == ret.gsx$kategori.$t) {
+    alleVarer.feed.entry.forEach((vare) => {
+        if (filter == "alle" || filter == vare.gsx$kategori.$t) {
             let klon = templateContainer.cloneNode(true).content;
-            klon.querySelector("img").src = `imgs/small/${ret.gsx$billede.$t}-sm.jpg`;
-            klon.querySelector(".navn").textContent = ret.gsx$navn.$t;
-            klon.querySelector(".kort").textContent = ret.gsx$kort.$t;
-            klon.querySelector(".pris").textContent = `Pris: ${ret.gsx$pris.$t}kr.`;
+            klon.querySelector("img").src = `nexthand_pics/${vare.gsx$billede.$t}.png`;
+            klon.querySelector(".navn").textContent = vare.gsx$navn.$t;
+            klon.querySelector(".kort").textContent = vare.gsx$kort.$t;
+            klon.querySelector(".pris").textContent = `${vare.gsx$pris.$t}`;
             container.appendChild(klon);
 
             container.lastElementChild.addEventListener("click", () => {
-                location.href = `singleView_site.html?navn=${ret.gsx$navn.$t}`;
+                location.href = `singleView.html?id=${vare.gsx$id.$t}`;
             });
         }
     })
@@ -45,5 +45,5 @@ function filtrering() {
         elm.classList.remove("valgt");
     })
     this.classList.add("valgt");
-    visRetter();
+    visVarer();
 }
