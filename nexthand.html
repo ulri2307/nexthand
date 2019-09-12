@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nexthand</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="splash">
+    </div>
+
+    <nav>
+        <button class="filter" data-kategori="alle">Alle</button>
+        <button class="filter" data-kategori="forretter">Forretter</button>
+        <button class="filter" data-kategori="hovedretter">Hovedretter</button>
+        <button class="filter" data-kategori="desserter">Desserter</button>
+        <button class="filter" data-kategori="sideorders">Sideorders</button>
+        <button class="filter" data-kategori="drikkevarer">Drikkevarer</button>
+    </nav>
+
+    <section class="data"></section>
+
+
+    <template>
+        <article>
+            <img src="" alt="">
+            <h3 class="navn"></h3>
+            <p class="kort"></p>
+            <p class="pris"></p>
+            <img src="" alt="">
+        </article>
+    </template>
+
+    <footer>
+        <div id="wrapper">
+            <div class="info">
+                <p>Adresse:</p>
+                <p>Grønnegade 97</p>
+                <p>1234 København K</p>
+            </div>
+            <div class="info">
+                <p>Åbningstider:</p>
+                <p>Mandag - fredag: 10:30-22:00</p>
+                <p>Lørdag: 12:00-23:00</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
