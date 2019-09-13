@@ -1,25 +1,41 @@
+/*-----------------------Generelt-----------------------*/
+
+* {
+    box-sizing: border-box;
+}
+
 img {
+    vertical-align: middle;
     width: 100%;
 }
 
-p {
-    font-family: 'Roboto', sans-serif;
+
+/*-----------------------menuen-----------------------*/
+
+.menu {
+    text-align: center;
 }
 
-
-h2 {
-    font-family: 'Roboto', sans-serif;
+.topnav {
+    overflow: hidden;
+    background-color: white;
+    flex-grow: 1;
 }
 
-h3 {
-    font-family: 'Roboto', sans-serif;
+.topnav a {
+    color: black;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: 'Questrial', sans-serif;
+    font-size: 2rem;
 }
 
-h5 {
-    font-family: 'Roboto', sans-serif;
-    color: darkgrey;
-    margin: 0.1rem;
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
 }
+
+/*-----------------------filtersiden-----------------------*/
 
 nav {
     margin: 0;
@@ -89,19 +105,39 @@ footer {
     background-color: rgba(250, 250, 250, 0.3);
 }
 
+/*Media*/
+
+@media screen and (max-width: 500px) {
+    .logo {
+        width: 20%;
+    }
+
+    .topnav a {
+        font-size: 0.6rem;
+    }
+
+}
 
 @media screen and (min-width: 501px) {
     .data {
         grid-template-columns: repeat(2, 1fr);
     }
-
-    #splash {
-        max-height: 150px;
-    }
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (max-width: 1000px) {
+    .logo {
+        width: 20%;
+    }
+
+    .topnav a {
+        font-size: 1.2rem;
+    }
+
     .data {
         grid-template-columns: repeat(3, 1fr);
+    }
+
+    .logo {
+        width: 15%;
     }
 }
