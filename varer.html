@@ -6,32 +6,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>nexthand</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Questrial&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <div id="splash">
-    </div>
 
     <div class="menu">
         <div class="topnav">
-            <a href="#news">Varer</a>
-            <a href="#news">Nyheder</a>
+            <a href="varer.html">Varer</a>
+            <a href="">Nyheder</a>
             <img src="logo/Artboard%2022.svg" class="logo">
-            <a href="#contact">Om</a>
-            <a href="#about">Kontakt</a>
+            <a href="">Om</a>
+            <a href="">Kontakt</a>
         </div>
     </div>
 
+    <div id="splash"></div>
+
+    <aside class="infowrapper">
+        <div class="infobox">
+            <div class="infobox_content">
+                <h2>Varer</h2>
+                <p>Herunder kan du se alle vores fantastiske varer. Vi har alt fra borde og stole til de fineste dekorationsting. Det er kun fantasien, der sætte grænser.</p>
+            </div>
+        </div>
+    </aside>
+
+    <nav class="filter_alle">
+        <button class="filter valgt" data-kategori="alle">Alle</button>
+    </nav>
     <nav>
-        <button class="filter" data-kategori="alle">Alle</button>
-        <button class="filter" data-kategori="bord">Borde</button>
-        <button class="filter" data-kategori="stol">Stole</button>
-        <button class="filter" data-kategori="sofa">Sofaer</button>
-        <button class="filter" data-kategori="reol">Reoler</button>
-        <button class="filter" data-kategori="hylde">Hylder</button>
-        <button class="filter" data-kategori="lampe">Lamper</button>
-        <button class="filter" data-kategori="tæppe">Tæpper</button>
-        <button class="filter" data-kategori="dekoration">Dekoration</button>
+        <div class="filter_mobler">
+            <button class="filter" data-kategori="bord" data-pris="pris">Borde</button>
+            <button class="filter" data-kategori="stol">Stole</button>
+            <button class="filter" data-kategori="sofa">Sofaer</button>
+            <button class="filter" data-kategori="reol">Reoler</button>
+        </div>
+        <div>
+            <button class="filter" data-kategori="hylde">Hylder</button>
+            <button class="filter" data-kategori="lampe">Lamper</button>
+            <button class="filter" data-kategori="tæppe">Tæpper</button>
+            <button class="filter" data-kategori="dekoration">Dekoration</button>
+        </div>
+    </nav>
+    <nav>
+        <div class="filter_prisklasse hide">
+            <p>Hvis du har lyst, kan du også sortere efter pris:</p>
+            <button class="filter-prisklasse" data-prisklasse="0-300">0-300 kr.</button>
+            <button class="filter-prisklasse" data-prisklasse="300-600">300-600 kr.</button>
+            <button class="filter-prisklasse" data-prisklasse="600-900">600-900 kr.</button>
+            <button class="filter-prisklasse" data-prisklasse="1000<">over 1000 kr.</button>
+        </div>
     </nav>
 
     <section class="data"></section>
@@ -40,11 +65,12 @@
     <template>
         <article>
             <img src="" alt="">
-            <h3 class="navn"></h3>
+            <h2 class="navn"></h2>
             <p class="kort"></p>
             <p class="pris"></p>
         </article>
     </template>
+
 
     <footer>
         <div id="wrapper">

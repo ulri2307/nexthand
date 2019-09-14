@@ -6,20 +6,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>nexthand</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Questrial&display=swap" rel="stylesheet">
 </head>
 
 <body>
+
+    <div class="menu">
+        <div class="topnav">
+            <a href="varer.html">Varer</a>
+            <a href="">Nyheder</a>
+            <img src="logo/Artboard%2022.svg" class="logo">
+            <a href="">Om</a>
+            <a href="">Kontakt</a>
+        </div>
+    </div>
+
+    <div id="splash_single"></div>
+
+    <aside class="infowrapper2">
+        <div class="infobox2">
+            <div class="infobox_content2">
+                <p>Hvis du ønsker at købe en af vores skønne varer, kan du skrive en mail til os under "Kontakt".</p>
+            </div>
+        </div>
+    </aside>
+
+
+
     <main id="single">
-        <button class="luk">Tilbage</button>
         <section class="indhold">
             <article class="enkeltVare">
-                <img class="billede" src="" alt="billede">
-                <h4 class="navn"></h4>
-                <p class="lang"></p>
-                <p class="pris"></p>
+                <div class="indhold_img">
+                    <img class="billede" src="" alt="billede">
+                </div>
+                <div class="indhold_txt">
+                    <h2 class="navn"></h2>
+                    <p class="lang"></p>
+                    <p class="pris"></p>
+                </div>
             </article>
         </section>
     </main>
+
+    <div>
+        <h3>Hvis du ønsker at se flere varer:</h3>
+    </div>
+
+    <div class="tilbage_wrapper">
+        <a class="tilbage_content" href="varer.html"><img src="nexthand_pics/babytaeppe.PNG" alt="taeppe"></a>
+        <a class="tilbage_content" href="varer.html"><img src="nexthand_pics/ashelf.png" alt="hylde"></a>
+        <a class="tilbage_content" href="varer.html"><img src="nexthand_pics/bogestol.PNG" alt="sofa"></a>
+    </div>
 
     <footer>
         <div id="wrapper">
@@ -47,9 +84,6 @@
             const jsonData = await fetch("https://spreadsheets.google.com/feeds/list/1mMZ6UI2-PXD05ApvpFvcxDUxDIGkskqlYwOtrnWw4FU/od6/public/values?alt=json");
             varer = await jsonData.json();
             visVare();
-            document.querySelector(".luk").addEventListener("click", () => {
-                history.back();
-            })
         }
 
         function visVare() {
@@ -62,7 +96,6 @@
                 };
             })
         }
-
     </script>
 
 </body>
