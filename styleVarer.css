@@ -99,7 +99,7 @@ h3 {
 
 .infobox_content {
     padding: 0.01rem 1em;
-    line-height: 1.5rem;
+    line-height: 1.2rem;
     background-color: white;
 }
 
@@ -131,6 +131,11 @@ nav {
     font-size: 1.2rem;
     font-family: 'Questrial', sans-serif;
     color: dimgrey;
+    background-color: white;
+}
+
+button {
+    background-color: white;
 }
 
 nav p {
@@ -147,6 +152,7 @@ nav p {
 
 .filter_mobler {
     margin: 0 0 2vw;
+    background-color: white;
 }
 
 .data {
@@ -187,6 +193,7 @@ article:nth-last-child(even) {
 
 .valgt {
     color: #8C6239;
+    background-color: white;
 }
 
 
@@ -246,6 +253,9 @@ article:nth-last-child(even) {
     margin: 2vw;
 }
 
+.tilbage_content {
+    margin: 0.5em;
+}
 
 .tilbage_content img {
     max-height: 40vh;
@@ -319,6 +329,19 @@ footer {
 
     .filter_mobler {
         margin: 0;
+        background-color: white;
+    }
+
+    .filter {
+        background-color: white;
+    }
+
+    .filter-prisklasse {
+        background-color: white;
+    }
+
+    .valgt {
+        background-color: white;
     }
 
     .enkeltVare {
@@ -359,12 +382,13 @@ footer {
 
     .tilbage_content {
         flex-grow: 1;
-        flex-basis: 400px;
+        flex-basis: 200px;
         filter: blur(1px);
+        transition: 1s ease all;
     }
 
     .tilbage_content img {
-        max-height: 40vh;
+        max-height: 45vh;
         min-height: 30vh;
     }
 
@@ -392,6 +416,10 @@ footer {
 
     .logo {
         max-width: 15%;
+    }
+
+    .valgt {
+        background-color: white;
     }
 
 }

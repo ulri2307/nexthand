@@ -1,0 +1,341 @@
+img {
+    width: 100%;
+    vertical-align: middle;
+}
+
+/******* Fonte *******/
+
+h1 {
+    font-size: 2rem;
+    color: black;
+    font-family: "Questrial";
+    margin-bottom: -2vh;
+}
+
+h2 {
+    font-size: 1.5rem;
+    color: black;
+    font-family: "Questrial";
+    margin-bottom: -2.5vh;
+    text-align: center;
+}
+
+h3 {
+    font-size: 1rem;
+    color: black;
+    font-weight: bold;
+    font-family: "Questrial";
+}
+
+h4 {
+    font-size: 1rem;
+    color: black;
+    font-weight: bold;
+    font-family: "Questrial";
+}
+
+p {
+    font-size: 1.2rem;
+    color: black;
+    font-family: "Questrial";
+    line-height: 28px;
+}
+
+h5 {
+    font-size: 1.1rem;
+    color: black;
+    font-family: "Questrial";
+    line-height: 150%;
+    margin: -18px 150px 0px 0px;
+    font-weight: normal;
+}
+
+/********* Menu **********/
+
+.menu {
+    text-align: center;
+    margin-top: -40px;
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: white;
+    flex-grow: 1;
+}
+
+.topnav a {
+    color: black;
+    padding: 13px 16px;
+    text-decoration: none;
+    font-family: 'Questrial', sans-serif;
+    font-size: 2rem;
+
+}
+
+.topnav a:hover {
+    border-bottom: 5px solid #009245;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/******* Splash *********/
+
+#splash {
+    margin-left: -10px;
+    background-image: url(image/Artboard_11.svg);
+    height: 86vh;
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 1%;
+    position: relative;
+    margin-top: -65px;
+}
+
+.logo1 {
+    height: 25vh;
+    margin-left: 572px;
+    width: 25vw;
+    margin-top: -100px;
+    background-image: url(image/Artboard_22.svg);
+    position: absolute;
+    background-repeat: no-repeat;
+}
+
+
+/*************************************************** om ****************************************/
+
+#om img {
+    width: 100%;
+}
+
+.box {
+    margin: -64vh 60vw 0vh 5vw;
+    position: absolute;
+
+}
+
+.box h2 {
+    font-weight: normal;
+    line-height: 5.5vh;
+    text-align: left;
+
+}
+
+.box1 {
+    margin: 0px 165px;
+}
+
+.box2 {
+    margin: 0px 165px;
+}
+
+.box3 {
+    margin: 0px 165px;
+}
+
+.box4 {
+    margin: 0px 165px;
+}
+
+#om .top {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #e0e0dfbf;
+}
+
+
+#om .mid1 {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #e0e0df7a;
+
+}
+
+#om .mid2 {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #e0e0dfbf;
+}
+
+#om .bottom {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #e0e0df7a;
+}
+
+#om .image {
+    flex-grow: 0.7;
+    flex-basis: 165px;
+    margin: 25px 65px 35px 45px;
+    border: solid;
+    border-width: 20px;
+    border-color: #5f702217;
+}
+
+#om .image1 {
+    flex-grow: 0.7;
+    flex-basis: 165px;
+    margin: 25px 65px 35px 45px;
+    border: solid;
+    border-width: 20px;
+    border-color: #5f702217;
+}
+
+
+#om .txt {
+    flex-grow: 1;
+    flex-basis: 300px;
+    margin: 25px 20px 20px 80px;
+}
+
+#om .txt1 {
+    flex-grow: 1;
+    flex-basis: 300px;
+    margin: 25px 80px 20px 20px;
+}
+
+
+@media only screen and (min-width:900px) {
+    #om .bottom {
+        flex-direction: row;
+    }
+}
+
+@media only screen and (min-width:900px) {
+    #om .mid2 {
+        flex-direction: column-reverse;
+    }
+}
+
+@media only screen and (min-width:900px) {
+    #om .mid1 {
+        flex-direction: row;
+    }
+}
+
+@media only screen and (min-width:900px) {
+    #om .top {
+        flex-direction: row;
+    }
+}
+
+@media only screen and (max-width:600px) {
+    #om .bottom {
+        margin-left: 20px;
+        margin-right: 20px
+    }
+
+    #splash {
+        margin-top: -22px;
+    }
+
+    .menu {
+        margin-top: -20px;
+    }
+
+    .logo1 {
+        height: 20vh;
+        margin-left: 205px;
+        width: 20vw;
+        margin-top: -64px;
+    }
+
+    #om .mid2 {
+        margin-left: 40px;
+        margin-right: 4px;
+        flex-direction: column-reverse;
+    }
+
+    #om .top {
+        margin-left: 20px;
+        margin-right: 20px
+    }
+
+    #om .mid1 {
+        margin-left: 40px;
+        margin-right: 40px
+    }
+
+    .box {
+        margin: -59vh 20vw 0vh 7vw;
+    }
+
+    .box h2 {
+        font-size: 1.3rem;
+    }
+
+    .box1 {
+        margin: -2px -30px;
+
+    }
+
+    .box2 {
+        margin: -2px -50px;
+
+    }
+
+    .box3 {
+        margin: -2px -50px;
+
+    }
+
+    .box4 {
+        margin: -2px -30px;
+
+    }
+
+    #om .txt {
+        margin: 25px 60px 20px 80px;
+    }
+
+    #om .txt1 {
+        margin: 25px 90px 20px 70px;
+    }
+
+    #om .image {
+        margin: -10px -27px 38px 77px;
+
+    }
+
+    #om .image1 {
+        margin: -12px 98px 35px 67px;
+
+    }
+}
+
+
+@media screen and (max-width: 500px) {
+    .logo {
+        width: 20%;
+    }
+
+    .topnav a {
+        font-size: 0.6rem;
+    }
+
+}
+
+
+@media screen and (max-width: 1000px) {
+    .logo {
+        width: 20%;
+    }
+
+    .topnav a {
+        font-size: 1.2rem;
+    }
+
+}
+
+@media screen and (min-width: 1000px) {
+    .logo {
+        width: 15%;
+    }
+
+    .container {
+        margin: 0 200px 0 200px;
+    }
+}
