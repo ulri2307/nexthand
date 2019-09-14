@@ -1,0 +1,361 @@
+img {
+    width: 100%;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Questrial', sans-serif;
+}
+
+/***********MENU**************/
+
+.menu {
+    text-align: center;
+}
+
+.logo {
+    width: 15%;
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: white;
+    flex-grow: 1;
+    transition: ease-out 0.3s;
+}
+
+.topnav a {
+    color: black;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: 'Questrial', sans-serif;
+    font-size: 2rem;
+}
+
+.topnav:hover {
+    border-bottom: 2px;
+}
+
+/*************SPLASH*****************/
+#splash1 {
+    margin-left: -10px;
+    background-image: url(splash/Artboard_5.svg);
+    height: 86vh;
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 1%;
+    position: relative;
+    margin-top: -65px;
+}
+
+.splash {
+    margin: 0 -10px 10px -10px;
+}
+
+/************SLIDESHOW**************/
+
+* {
+    box-sizing: border-box;
+}
+
+img {
+    vertical-align: middle;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+    position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+    cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+    text-align: center;
+    background-color: #222;
+    padding: 2px 16px;
+    color: white;
+    font-family: 'Questrial', sans-serif;
+    margin: 0;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Six columns side by side */
+.column {
+    float: left;
+    width: 16.66%;
+    font-family: 'Questrial', sans-serif;
+    margin: 0;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+    opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+    opacity: 1;
+}
+
+/*****************FORSIDE*******************/
+.container1 {
+    position: relative;
+    width: 25%;
+    flex-basis: 350px;
+    margin: 10px;
+}
+
+.image1 {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.middle1 {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.middle1 a {
+    text-decoration: none;
+}
+
+.container1:hover .image1 {
+    opacity: 0.3;
+}
+
+.container1:hover .middle1 {
+    opacity: 1;
+}
+
+.text1 {
+    color: #603813;
+    font-size: 4rem;
+    padding: 16px 32px;
+    font-family: 'Questrial', sans-serif;
+}
+
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: 10px;
+}
+
+.os {
+    border-radius: 50%;
+    width: 100%;
+}
+
+.osAlle p {
+    font-family: 'Questrial', sans-serif;
+    margin: 100px 0 0 40px;
+    font-size: 1.3rem;
+    line-height: 25px;
+}
+
+.osAlle {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.os1 {
+    flex-basis: 500px;
+}
+
+.os2 {
+    flex-basis: 510px;
+}
+
+/***********NYHEDER*************/
+.txt {
+    margin: 0 0 8px 0;
+}
+
+.txt p {
+    margin: 0 0 -10px 0;
+    font-family: 'Questrial', sans-serif;
+}
+
+.txt h2 {
+    margin: 10px 0 -3px 0;
+    font-family: 'Questrial', sans-serif;
+}
+
+.button {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #222;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 28px;
+    padding: 20px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+    font-family: 'Questrial', sans-serif;
+    position: relative;
+    top: 50%;
+    left: 40%;
+}
+
+.button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.button:hover span {
+    padding-right: 25px;
+}
+
+.button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+/***********GRID**************/
+.data {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(1, 1fr);
+    width: 100%;
+}
+
+
+/*******LINKS******/
+
+.caption-container a:link {
+    color: white;
+    text-decoration: none;
+}
+
+.caption-container a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+/***********MEDIA***************/
+
+@media screen and (min-width: 501px) {
+    .data {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .logo {
+        max-width: 20%;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .topnav a {
+        font-size: 1.2rem;
+    }
+
+    .button {
+        left: 27%;
+    }
+
+    .wrapper {
+        margin: 10px 20px 0 50px;
+    }
+
+    .osAlle {
+        margin: 20px;
+    }
+
+    .osAlle p {
+        margin: 30px 0 0 0;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .container {
+        margin: 0 350px 0 350px;
+    }
+
+    .data {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .osAlle {
+        margin: 50px 200px 0 200px;
+        flex-wrap: nowrap;
+    }
+
+}
