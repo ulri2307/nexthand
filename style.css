@@ -321,14 +321,6 @@ footer {
         margin: 0;
     }
 
-    .filter_prisklasse p {
-        margin: 27px 0 2px;
-    }
-
-    .filter_prisklasse button {
-        margin: 0 0 10px;
-    }
-
     .enkeltVare {
         flex-wrap: nowrap;
         max-width: none;
