@@ -19,7 +19,7 @@ function visVarer() {
     alleVarer.feed.entry.forEach(vare => {
         if ((filterKategori == "alle" || filterKategori == vare.gsx$kategori.$t) && (filterPrisklasse == "alle" || filterPrisklasse == vare.gsx$prisklasse.$t)) {
             const klon = templateContainer.cloneNode(true).content;
-            klon.querySelector("img").src = `nexthand_pics/${vare.gsx$billede.$t}.png`;
+            klon.querySelector("img").src = `nexthand_pics/${vare.gsx$billede.$t}.jpg`;
             klon.querySelector(".navn").textContent = vare.gsx$navn.$t;
             klon.querySelector(".kort").textContent = vare.gsx$kort.$t;
             klon.querySelector(".pris").textContent = `${vare.gsx$pris.$t}`;
