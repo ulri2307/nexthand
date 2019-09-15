@@ -8,7 +8,7 @@ img {
 h1 {
     font-size: 2rem;
     color: black;
-    font-family: "Questrial";
+    font-family: 'Questrial', sans-serif;
     margin-bottom: -2vh;
 }
 
