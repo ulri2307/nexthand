@@ -96,13 +96,14 @@
         function visVare() {
             varer.feed.entry.forEach((vare) => {
                 if (vare.gsx$id.$t == id) {
-                    document.querySelector(".billede").src = `nexthand_pics/${vare.gsx$billede.$t}.png`;
+                    document.querySelector(".billede").src = `nexthand_pics/${vare.gsx$billede.$t}.jpg`;
                     document.querySelector(".navn").textContent = vare.gsx$navn.$t;
                     document.querySelector(".lang").textContent = vare.gsx$lang.$t;
                     document.querySelector(".pris").textContent = vare.gsx$pris.$t;
                 };
             })
         }
+
     </script>
 
 </body>
