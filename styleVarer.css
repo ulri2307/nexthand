@@ -159,7 +159,6 @@ nav p {
 .data {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    cursor: pointer;
     column-count: 4;
     column-gap: 1em;
     margin: 1.5em;
@@ -178,6 +177,7 @@ article {
     box-sizing: border-box;
     box-shadow: 2px 2px 4px 0 #ccc;
     justify-self: center;
+    cursor: pointer;
 }
 
 article img {
