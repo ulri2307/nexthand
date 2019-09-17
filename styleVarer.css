@@ -58,7 +58,7 @@ h3 {
 }
 
 .logo {
-    max-width: 13%;
+    width: 10%;
 }
 
 /*-----------------------splash-----------------------*/
@@ -247,6 +247,23 @@ article:nth-last-child(even) {
     background-color: white;
     box-sizing: inherit;
     box-shadow: none;
+    cursor: pointer;
+}
+
+.luk {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: black;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 5px;
+    width: 20vw;
+    transition: all 0.5s;
+    cursor: pointer;
+    font-family: 'Questrial', sans-serif;
+    position: relative;
 }
 
 .tilbage_wrapper {
@@ -291,13 +308,6 @@ footer {
 }
 
 /*---------------------Media-----------------------*/
-
-@media screen and (min-width: 500px) {
-    .logo {
-        width: 20%;
-    }
-
-}
 
 @media screen and (min-width: 501px) {
     .data {
@@ -380,7 +390,7 @@ footer {
     .tilbage_content {
         flex-grow: 1;
         flex-basis: 200px;
-        filter: blur(1px);
+        opacity: 0.5;
         transition: 1s ease all;
     }
 
@@ -390,7 +400,7 @@ footer {
     }
 
     .tilbage_content:hover {
-        filter: blur(0);
+        opacity: 1;
     }
 
 }
@@ -409,10 +419,6 @@ footer {
 
     .topnav a {
         font-size: 1.2rem;
-    }
-
-    .logo {
-        max-width: 15%;
     }
 
     .valgt {
